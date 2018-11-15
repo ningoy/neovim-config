@@ -21,9 +21,19 @@ set hlsearch " 搜索时，高亮显示搜索结果
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
+
 Plug 'junegunn/vim-easy-align'
+
 Plug 'scrooloose/nerdtree'
+" 快捷键
 map <F5> :NERDTreeToggle<CR>
+" 显示隐藏文件
+let NERDTreeShowHidden=1
+" 设置宽度
+let NERDTreeWinSize=31
+" 自动关闭
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'klen/python-mode'
 Plug 'w0rp/ale'
