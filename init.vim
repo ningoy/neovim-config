@@ -23,6 +23,7 @@ set hlsearch " 搜索时，高亮显示搜索结果
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
+map <F5> :NERDTreeToggle<CR>
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'klen/python-mode'
 Plug 'w0rp/ale'
