@@ -51,12 +51,20 @@ let g:pymode_motion = 1
 
 
 Plug 'w0rp/ale'
+" lint
+let g:ale_linters = {
+\    'javascript': ['eslint'],
+\    'python':     ['autopep8'],
+\}
+
 Plug 'tomasr/molokai'
 Plug 'bling/vim-airline'
-Plug 'kien/ctrlp.vim'
 Plug 'mhinz/vim-startify'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
+" syntax
+let g:javascript_plugin_jsdoc = 1
+
 Plug 'nvie/vim-flake8'
 Plug 'Yggdroot/indentLine'
 Plug 'tell-k/vim-autopep8'
