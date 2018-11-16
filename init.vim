@@ -26,7 +26,7 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'scrooloose/nerdtree'
 " 快捷键
-map <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
 " 显示隐藏文件
 let NERDTreeShowHidden=1
 " 设置宽度
@@ -35,7 +35,21 @@ let NERDTreeWinSize=31
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" 快捷键
+nnoremap <silent> <C-p> :Files<CR>
+
 Plug 'klen/python-mode'
+" Setup max line length
+let g:pymode_options_max_line_length = 79
+" Python version
+let g:pymode_python = 'python'
+" Enable PEP8 indentation
+let g:pymode_indent = 1
+" Enable pymode-motion
+let g:pymode_motion = 1
+
+
 Plug 'w0rp/ale'
 Plug 'tomasr/molokai'
 Plug 'bling/vim-airline'
