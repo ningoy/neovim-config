@@ -70,4 +70,5 @@ Plug 'Yggdroot/indentLine'
 Plug 'tell-k/vim-autopep8'
 Plug 'posva/vim-vue'
 Plug 'Shougo/neocomplete'
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
