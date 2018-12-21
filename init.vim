@@ -57,6 +57,7 @@ let g:ale_linters = {
 Plug 'tomasr/molokai'
 Plug 'bling/vim-airline'
 Plug 'mhinz/vim-startify'
+set viminfo='100,n$HOME/.vim/files/info/viminfo
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 " syntax
@@ -66,6 +67,12 @@ Plug 'nvie/vim-flake8'
 Plug 'Yggdroot/indentLine'
 Plug 'tell-k/vim-autopep8'
 Plug 'posva/vim-vue'
-Plug 'Shougo/neocomplete'
 Plug 'scrooloose/nerdcommenter'
+
+" syntax complete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog = '/usr/local/anaconda3/bin/python'
+let g:python2_host_prog = '/usr/local/bin/python2'
+
 call plug#end()
