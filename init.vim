@@ -9,7 +9,6 @@ set showcmd " 命令模式下，在底部显示，当前键入的指令
 colorscheme molokai
 set background=dark
 set encoding=utf-8 " 使用utf-8编码
-set autoindent " 按下回车键后，下一行的缩进会自动跟上一行的缩进保持一致
 set cursorline " 光标所在的当前行高亮
 set hlsearch " 搜索时，高亮显示搜索结果
 
