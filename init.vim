@@ -35,7 +35,7 @@ Plug 'junegunn/fzf.vim'
 " 快捷键
 nnoremap <silent> <C-p> :Files<CR>
 
-Plug 'klen/python-mode'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " Setup max line length
 let g:pymode_options_max_line_length = 79
 " Python version
