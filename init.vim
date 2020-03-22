@@ -71,7 +71,7 @@ Plug 'scrooloose/nerdcommenter'
 " syntax complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
-let g:python3_host_prog = '/usr/local/anaconda3/bin/python'
-let g:python2_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/home/ningoy/programs/miniconda3/bin/python'
+let g:python2_host_prog = '/usr/bin/python2'
 
 call plug#end()
