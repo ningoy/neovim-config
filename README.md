@@ -1,6 +1,6 @@
 # neovim-config
 
-`git clone https://github.com/ningoy/nvim ~/.config`
+`git clone https://github.com/ningoy/nvim ~/.config/nvim`
 
 ## Unix
 
